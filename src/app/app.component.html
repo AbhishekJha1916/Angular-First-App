@@ -1,3 +1,18 @@
 <h1>{{title}}</h1>
-<h1>{{count}}</h1>
-<h1 *ngIf="count > 0">I am visible if I am greater than 0</h1>
+<div class="screen">
+    Num1: <h1>{{screen1}}</h1>
+    Num2: <h1>{{screen2}}</h1>
+    <h1>-------------</h1>
+    <h1>{{screen3}}</h1>
+</div>
+<div>
+  Enter the first number: <input type="number" [(ngModel)] = "screen1"><br><br>
+  Enter the second number: <input type="number" [(ngModel)] = "screen2"><br>
+  <div [(ngModel)] = "screen3"></div><br>
+  <br>
+  <button (click)="sum()">+</button>
+  <button (click)="sub()">-</button>
+  <button (click)="prod()">*</button>
+  <button (click)="div()">/</button>
+  <button (click)="mod()">%</button>
+</div>

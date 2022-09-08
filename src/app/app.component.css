@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+    font-size: x-large;
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    font-size: x-large;
+    margin: 30px;
+}
+
+input{
+    font-size: x-large;
+}
